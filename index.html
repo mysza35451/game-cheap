@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game-Cheap</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/nav-bar.js"></script>
+    <script src="js/typewriter.js"></script>
+    <script src="js/search-request.js"></script>
+  </head>
+  <body onload="typeWriter()">
+    <header>
+      <nav>
+        <ul class="menu">
+          <li class="logo">
+            <a href="#" class="logo1">Game</a><a href="" class="logo2">Cheap</a>
+          </li>
+          <li class="item active"><a href="index.html">Home</a></li>
+          <li class="item"><a href="html/compare.html">Compare</a></li>
+          <li class="item"><a href="#">Help</a></li>
+
+          <li class="item button"><a href="#">Log In</a></li>
+          <li class="item button secondary"><a href="#">Sign Up</a></li>
+          <li class="item button secondary">
+            <form class="search" style="margin: auto; max-width: 300px">
+              <input
+                id="search-input"
+                type="text"
+                placeholder="Search..."
+                name="search2"
+              />
+              <button type="button" onclick="searchRequest()">
+                <i class="fa fa-search"></i>
+              </button>
+            </form>
+          </li>
+          <li class="toggle" onclick="toggleBars()">
+            <span class="bars"></span>
+          </li>
+        </ul>
+      </nav>
+      <div class="type-writer-welcome">
+        <h1 id="type-writer-welcome"></h1>
+      </div>
+    </header>
+    <div class="page-wrap">
+      <section class="search-by-genre-section">
+        <div class="break"></div>
+        <div class="section-title">
+          <h1>Search by game genre!</h1>
+          <p>Find your game by choosing your favorite genre!</p>
+        </div>
+        <div class="break"></div>
+        <div class="genres-wrapper">
+          <div class="genre-card">
+            <img
+              style="max-width: 160px; max-height: 160px"
+              src="./img/racing.jpg"
+              alt="racing"
+            />
+            <div class="genre-overlay">Racing</div>
+          </div>
+          <div class="genre-card">
+            <img
+              style="max-width: 160px; max-height: 160px"
+              src="./img/horror.jpg"
+              alt="racing"
+            />
+            <div class="genre-overlay">Horror</div>
+          </div>
+          <div class="genre-card">
+            <img
+              style="max-width: 160px; max-height: 160px"
+              src="./img/simulation.jpg"
+              alt="racing"
+            />
+            <div class="genre-overlay">Simulation</div>
+          </div>
+          <div class="genre-card">
+            <img
+              style="max-width: 160px; max-height: 160px"
+              src="./img/adventure.jpg"
+              alt="racing"
+            />
+            <div class="genre-overlay">Adventure</div>
+          </div>
+          <div class="genre-card">
+            <img
+              style="max-width: 160px; max-height: 160px"
+              src="./img/rpg.jpg"
+              alt="racing"
+            />
+            <div class="genre-overlay">RPG</div>
+          </div>
+        </div>
+      </section>
+      <div class="break"></div>
+      <section class="trending-products-section">
+        <div class="trending-products-wrap">
+          <div class="section-title">
+            <h1>Trending</h1>
+            <p>Discover the favorite games across our website!</p>
+          </div>
+          <div class="break"></div>
+          <div class="cards-trending">
+            <div class="card">
+              <img src="./img/gtavcover.jpg" alt="Search" style="width: 100%" />
+              <h1>Grand Theft Auto V</h1>
+              <p class="price">£29.99</p>
+
+              <p>G2A</p>
+              <p><button>More</button></p>
+            </div>
+            <div class="card">
+              <img src="./img/reddead2.jpg" alt="Search" style="width: 100%" />
+              <h1 style="font-size: 25px">Red Dead Redemption 2</h1>
+              <p class="price">£43.99</p>
+
+              <p>Gamegate</p>
+              <p><button>More</button></p>
+            </div>
+            <div class="card">
+              <img
+                src="./img/battlefieldcover.jpg"
+                alt="Search"
+                style="width: 100%"
+              />
+              <h1 style="">Battlefield V</h1>
+              <p class="price">£13.99</p>
+
+              <p>Amazon</p>
+              <p><button>More</button></p>
+            </div>
+          </div>
+
+          <div class="break"></div>
+        </div>
+      </section>
+
+      <section class="search-by-price-section">
+        <div class="section-title">
+          <h1>Search by price</h1>
+          <p>On the budget? Search by price!</p>
+        </div>
+        <div class="break"></div>
+        <div class="search-by-price">
+          <button class="price-box">Under £1</button>
+          <button class="price-box">Under £2</button>
+          <button class="price-box">Under £5</button>
+          <button class="price-box">Under £10</button>
+          <button class="price-box">Under £20</button>
+        </div>
+        <div class="break"></div>
+      </section>
+    </div>
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h3>Game<span>Cheap</span></h3>
+        <p class="footer-links">
+          <a href="#">Home</a>
+          ·
+          <a href="#">Compare</a>
+          ·
+          <a href="#">Help</a>
+        </p>
+        <p class="footer-company-name">
+          GameCheap LTD © 2020 Designed and Developed by
+          <a href="https://maciejmyszczynski.com/">Maciej Myszczynski</a>
+        </p>
+        <div class="footer-icons">
+          <a href="./index.html"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p>Contact Us</p>
+        <form action="#" method="post">
+          <input type="text" name="email" placeholder="Email" />
+          <textarea name="message" placeholder="Message"></textarea>
+          <button>Send</button>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>

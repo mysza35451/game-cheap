@@ -1,0 +1,30 @@
+{
+  "name": "game-cheap",
+  "version": "1.0.0",
+  "description": "CW1 Advanced Web and Dev at MDX Uni, Maciej Myszczynski M00661727",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mysza35451/game-cheap.git"
+  },
+  "author": "Maciej Myszczynski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mysza35451/game-cheap/issues"
+  },
+  "homepage": "https://github.com/mysza35451/game-cheap#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "express": "^4.17.1",
+    "json": "^10.0.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "chai-http": "^4.3.0"
+  }
+}
